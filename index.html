@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 04/06</title>
+
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #box {
+      background:linear-gradient(to right, rgb(153, 2, 164), rgb(251, 129, 235));
+      color: white;
+      width: 75%;
+      margin: 0 auto;
+      padding: 15px;
+      border-radius: 10%;
+      margin-bottom: 10%;
+      box-shadow: 10px 10px 2px yellowgreen, -10px -10px 2px rgba(255, 255, 0, 0.519);
+    }
+
+    #box p {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    #boxbotao {
+      display: flex;
+      justify-content: center;
+    }
+
+    #boxbotao button {
+      background: linear-gradient(to right, rgb(0, 0, 128), rgb(53, 245, 53));
+      color: white;
+      padding: 10px 20px 10px 20px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      box-shadow:4px 4px 2px rgba(0, 0, 255, 0.342);
+    }
+
+    #titulo {
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 3px 1px rgba(242, 0, 255, 0.344);
+    }
+
+    #coracao {
+      text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.298), -4px -4px 2px rgba(0, 0, 0, 0.298);
+      font-size: 80px;
+      animation: coracao .5s infinite alternate 
+      linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    @keyframes coracao {
+      from {
+        transform: scale(5);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+  <div>
+    <h1 id="titulo">Exemplo de Estilos com CSS</h1>
+  </div>
+
+  <div id="box">
+    <p> Está caixa tem:</p>
+    <ul>
+      <li>Cantos arredondados</li>
+      <li>Fundo com dêgrade</li>
+      <li>Sombra ao redor</li>
+      <li>Transição ao passar o mouse</li>
+    </ul>
+  </div>
+
+  <div id="boxbotao">
+    <button id="btnEstilo">Botão com Estilo</button>
+  </div>
+
+  <div id="boxposicao">
+    <div id="coracao">💜</div>
+  </div>
+  
+</main>
+
+</body>
+</html>
